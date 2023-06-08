@@ -311,7 +311,7 @@ generate
                 .samp_out_str   (comb_dv),
                 .samp_out_data  (comb_inst_out)
                 );
-        wire comb_dv;
+        // wire comb_dv;
         assign comb_chain_out_str = comb_stage[CIC_N - 1].comb_dv;  // use buffered inp_str 
         initial begin
             //$display("i:%d  comb idw=%2d odw=%2d  B(%2d, %3d, %2d, %2d, %2d, %2d)=%2d", j, idw_cur, odw_cur, CIC_N + j + 1, CIC_R, CIC_M, CIC_N, INP_DW, OUT_DW, B_m_j);
